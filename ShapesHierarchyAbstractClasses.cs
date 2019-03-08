@@ -4,6 +4,12 @@ using System.Text;
 
 namespace Shapes.Hierarchy.AbstractClasses
 {
+    public abstract class Shape
+    {
+        public abstract void Draw();
+        public abstract double Area { get; }
+    }
+
     public abstract class PlaneShape : Shape
     {
         public abstract double Perimeter { get; }
